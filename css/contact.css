@@ -1,0 +1,345 @@
+h1{font-family: 'Raleway', sans-serif;
+}
+form
+{
+
+max-width: 500px;
+margin:50px auto ;
+
+}
+
+form input , form textarea {margin-bottom: 5px}
+body{background-color: black;}
+#container{
+
+
+		max-width: 500px;
+	max-height: 500px;
+	background-color: #90afc1;
+
+}
+#he{
+
+	background-color:black; 
+
+	height: 9vw;
+	max-height: 75px;
+}
+#all{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	height:43vw;
+
+		max-height: 84vw;
+
+background-color: white;
+
+
+}
+h1{
+font-family: 'Playfair Display', serif;
+margin-left: 42%;
+	color: white;
+    display: inline-block;
+
+}
+#movie{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	border-color: black;
+border-style: solid;
+	border-width: 1px ;
+	margin:10px;
+	margin-top: 20px;
+	
+height: 40vw;
+background-color: black;
+
+}
+#ran{
+margin-top: 2%;
+background-color: #6e0c92;
+color: #c7f7fb;
+border-color: #6e0c92;
+	height: 50px;
+max-width: 44%;
+font-family: 'Playfair Display', serif;
+font-size: 20px
+
+}
+#filter{
+
+	  box-shadow: 0 4px 8px 0 rgba(37, 24, 77, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-color: #25184d;
+
+border-style: solid;
+	border-width: 1px ;
+	margin:10px;
+	margin-top: 20px;
+
+max-width: ;
+	
+background-color: #190d3e;
+
+
+}
+#void{
+	width: 25%;
+	color: black;
+}
+
+h3{
+font-family: 'Playfair Display', serif;
+text-align: center;
+margin-top: 5px;
+color: black;
+
+ }
+ #line{
+
+background-color: white;
+height: 1px;
+width: 50%;
+max-width: 500px;
+margin:auto;
+ }
+ h4{
+margin-left: 10px;
+color: black;
+
+font-family: 'Playfair Display', serif;
+ }
+#filter #cats{
+
+margin:auto;
+width: 95%;
+
+ }
+#filter th{
+font-size: 1vw;
+font-family: 'Playfair Display', serif;
+
+color: white; 
+padding-left: 6%;
+}
+#thefu th{
+padding-left: 20%;
+}
+
+.movieinfo{
+width: 50%;
+
+
+	  display: inline-block;
+margin-left: 1% ;
+max-height:75%;
+margin-top:  2%;
+list-style: none;
+position: absolute;
+}
+
+#moviename{
+	font-size: 2vw;
+text-align:center;
+font-family: 'Playfair Display', serif;
+
+
+}
+#uuu{
+margin-left: 5vw;
+margin-top: 2vw;
+	font-size: 1vw;
+padding:  2vw;
+color: white;
+
+font-family: 'Playfair Display', serif;
+
+}
+
+
+#poster{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+max-height:90%;
+background-color: red; 
+margin-top:  2%;
+margin-left: 4vw;
+
+}
+.movieinfo table{
+
+
+
+
+}
+
+
+.iframe-container{
+  position: relative;
+  width: auto;
+  padding-bottom: 0px; 
+  height: 50%;
+  display: inline-block;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: auto;
+  height: 50%;
+ display: inline-block;
+}
+/* The container */
+.catss {
+ 
+
+display: block;
+  position: relative;
+  padding-left: 35px;
+margin-top: 5px;
+margin-left: auto;
+  cursor: pointer;
+  font-size: 2vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+font-family: 'Playfair Display', serif;
+  margin-bottom: 0px;
+
+}
+
+/* Hide the browser's default checkbox */
+.catss input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2vw;
+  width: 2vw;
+  background-color: #eee;
+  margin-top: 0.4vw;
+}
+
+
+/* On mouse-over, add a grey background color */
+.catss:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.catss input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.catss input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.catss .checkmark:after {
+  left: 0.8vw;
+  top: 0.5vw;
+
+  width: 0.5vw;
+  height: 1vw;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.containerr {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  margin-left: auto;
+
+  cursor: pointer;
+  font-size: 1vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1vw;
+  width: 1vw;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerr:hover input ~ .checkmarkr {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerr input:checked ~ .checkmarkr {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkr:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerr input:checked ~ .checkmarkr:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerr .checkmarkr:after {
+ 	top: 0.4vw;
+	left: 0.4vw;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+#tra{
+margin: 5vw;
+color: white;
+background-color: black;
+font-family: 'Playfair Display', serif;
+font-size: 1.5vw;
+}
